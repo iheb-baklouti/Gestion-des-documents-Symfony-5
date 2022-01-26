@@ -1,0 +1,18 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+doc_homepage:
+    path:     /
+    controller: App\Controller\LuckyController::indexAction
+    #defaults: { _controller: Default:index }
+doc_add:
+    path:     /adddoc
+    controller: App\Controller\LuckyController::addAction
+    #defaults: { _controller: Default:add }
+doc_del:
+    path:     /deldoc
+    controller: App\Controller\LuckyController::deleteAction
+    #defaults: { _controller: Default:delete }
+doc_reg:
+    path:     /addreg
+    controller: App\Controller\LuckyController::Adduser

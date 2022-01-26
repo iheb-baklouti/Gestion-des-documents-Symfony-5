@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello LuckyController!{% endblock %}
+
+{% block body %}
+
+<center>
+
+
+
+        <h1>Ajouter un utilisateur </h1>
+        {{ form_start(form)  }}
+        Nom: *  {{ form_widget(form.Nom)}} </br> </br>
+        Prenom: *  {{ form_widget(form.Prenom)}}
+        Username: *  {{ form_widget(form.Username)}}
+        Password: *  {{ form_widget(form.Password)}}
+        EMail: *  {{ form_widget(form.EMail)}}
+        Lieu: *  {{ form_widget(form.Lieu)}}
+        
+        Image: * {{ form_widget(form.Image)}}
+        
+
+
+        </br></br> <input type="submit" class="confirm" value="ajouter"/></br> 
+        <progress id="progress"></progress>
+      
+{{ form_end(form) }}
+</center>
+
+
+
+
+{% endblock %}

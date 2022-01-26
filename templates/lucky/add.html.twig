@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello LuckyController!{% endblock %}
+
+{% block body %}
+
+<center>
+
+        <h1 class="btn btn-danger-">Ajouter un Document </h1>
+        {{ form_start(form)  }}
+        Titre: *  {{ form_widget(form.titre)}} </br> </br>
+        Format: *  {{ form_widget(form.Format)}}
+        Description: *  {{ form_widget(form.Description)}}
+   
+        chemin: * {{ form_widget(form.chemin)}}
+        
+        </br></br> <input type="submit" class="confirm" value="ajouter"/></br> 
+        <progress id="progress"></progress>
+      
+{{ form_end(form) }}
+</center>
+
+{% endblock %}
